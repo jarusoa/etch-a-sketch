@@ -1,6 +1,19 @@
 
 #grid-container {
+
+}
+
+.rowContainer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    max-width: none;
+    border: 3px solid;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    border: 1px solid;
+    max-width: none;
+    height: 30px;
+    width: 30px;
+    
 }
