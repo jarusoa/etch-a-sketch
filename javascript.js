@@ -10,7 +10,6 @@ function createDivs(num){
         for(let i = 0; i < num; i ++){
             var div = document.createElement("div");
             div.classList.add("square");
-            div.textContent = i + 1;
         
             rowContainer.appendChild(div);
         } // end for
@@ -18,4 +17,4 @@ function createDivs(num){
     } // end for
 } // end createDivs
 
-createDivs(3);
+createDivs(64);
