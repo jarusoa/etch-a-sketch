@@ -12,11 +12,11 @@ function createDivs(num){
         for(let i = 0; i < num; i ++){
             let div = document.createElement("div");
             div.classList.add("square");
-            div.addEventListener("click", () => changeBackground(div));
+            div.addEventListener("mouseover", () => changeBackground(div));
             rowContainer.appendChild(div);
         } // end for
         gridContainer.appendChild(rowContainer);
     } // end for
 } // end createDivs
 
-createDivs(3);
+createDivs(10);
