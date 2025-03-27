@@ -1,4 +1,6 @@
-
+function changeBackground(div){
+    div.classList.add("colored");
+}
 
 function createDivs(num){
 
@@ -8,13 +10,13 @@ function createDivs(num){
         var rowContainer = document.createElement("div");
         rowContainer.classList.add("rowContainer");
         for(let i = 0; i < num; i ++){
-            var div = document.createElement("div");
+            let div = document.createElement("div");
             div.classList.add("square");
-        
+            div.addEventListener("click", () => changeBackground(div));
             rowContainer.appendChild(div);
         } // end for
         gridContainer.appendChild(rowContainer);
     } // end for
 } // end createDivs
 
-createDivs(64);
+createDivs(3);
