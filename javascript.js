@@ -19,4 +19,16 @@ function createDivs(num){
     } // end for
 } // end createDivs
 
+function promptUser(){
+    document.getElementById("grid-container").innerHTML = "";
+    var gridSize = prompt("What grid size would you like? (Ex. 6 = 6 x 6)");
+    if(gridSize > 100){
+        alert("Please select a size equal or lower to 100");
+        promptUser();
+    } // end if
+    else{
+        createDivs(gridSize);
+    } // end else
+} // end promptUser
+
 createDivs(10);

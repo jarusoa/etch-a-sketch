@@ -26,3 +26,8 @@
     box-sizing: border-box; 
     background-color: black
 }
+
+#grid-button{
+    margin: 10px;
+    margin-left: 240px;
+}
